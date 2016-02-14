@@ -1,0 +1,26 @@
+<h1>Check Console</h1>
+
+<script type="text/javascript">
+	function iFactorial(num){
+		var multiplier = 1;
+		for(var i=1; i<=num; i++){
+			multiplier *= i
+		}
+		console.log(multiplier);
+		return multiplier;
+	}
+	iFactorial(7);
+</script>
+
+<!-- Recursive Implementation -->
+<script type="text/javascript">
+	function rFactorial(num){
+		if (n===1){
+			return 1;
+		}
+		else{
+			return n * rFactorial(n-1);
+		}
+	}
+	rFactorial(4)
+</script>

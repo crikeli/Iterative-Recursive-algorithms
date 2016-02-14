@@ -1,0 +1,29 @@
+<h1>Check Console</h1>
+
+<script type="text/javascript">
+	function iSum(num){
+		var sum = 0;
+		for (var i=1; i<= num; i++){
+			sum = sum + i ;
+		}
+		console.log(sum);
+	}
+	iSum(10);
+	
+</script>
+
+<!-- Recursive Implementation -->
+
+<script type="text/javascript">
+
+	function rSum(n){
+		if (n === 1){
+			return 1
+		}
+		else{
+			return n + rSum(n-1);
+		}
+	}
+	rSum(5);
+
+</script>
